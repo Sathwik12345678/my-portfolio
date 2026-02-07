@@ -16,11 +16,12 @@ function Home() {
 
         {/* LEFT: Profile Image */}
         <div className="flex-shrink-0 mt-8 md:mt-16">
-          <img
-          src="/profile.png"
+          <img 
+          src={`${import.meta.env.BASE_URL}profile.png`}
           alt="Profile"
-          className="w-96 h-96 rounded-full object-cover shadow-xl"
-          />
+          className="w-80 h-80 rounded-full object-cover shadow-xl"
+/>
+
         </div>
 
         {/* RIGHT: Text Content */}
