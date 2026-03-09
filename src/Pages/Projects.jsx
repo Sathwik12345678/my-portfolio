@@ -33,6 +33,42 @@ function Projects() {
         {/* Project 1 */}
         <div className="bg-white dark:bg-white/5 border border-white/10 p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
           <h2 className="text-3xl font-semibold text-white mb-3">
+            Canvas Collab
+          </h2>
+
+          <p className="text-xl text-gray-200 leading-relaxed">
+            <span className="font-semibold text-white">Description:</span><br />
+            Canvas Collab is a real-time collaborative digital workspace platform inspired by Scribble. It enables multiple participants to join a shared canvas, collaborate seamlessly, communicate with each other, and conduct virtual meetings all within a single integrated environment. The platform supports live drawing, instant messaging, screen sharing, and video conferencing capabilities for a comprehensive collaborative experience.
+            <br /><br />
+            Through this project, I gained extensive experience in implementing real-time synchronization using WebSockets, managing concurrent user sessions, building responsive collaborative UI, handling complex state management, and integrating multimedia communication features.
+            <br /><br />
+            <span className="font-semibold text-white">Technologies:</span><br />
+            React, Node.js, Express, WebSockets, MongoDB, JavaScript
+          </p>
+
+          <div className="mt-4 flex gap-4">
+            <a
+              href="https://canvascollab-uw1z.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-xl text-green-400 hover:underline"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/Sathwik12345678/Canvascollab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-xl text-blue-400 hover:underline"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* Project 2 */}
+        <div className="bg-white dark:bg-white/5 border border-white/10 p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h2 className="text-3xl font-semibold text-white mb-3">
             GenZ AI Chatbot
           </h2>
 
@@ -56,7 +92,7 @@ function Projects() {
           </a>
         </div>
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div className="bg-white dark:bg-white/5 border border-white/10 p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
           <h2 className="text-3xl font-semibold text-white mb-3">
             Task Manager Application
