@@ -38,32 +38,39 @@ function Projects() {
 
           <p className="text-xl text-gray-200 leading-relaxed">
             <span className="font-semibold text-white">Description:</span><br />
-            Canvas Collab is a real-time collaborative digital workspace platform inspired by Scribble. It enables multiple participants to join a shared canvas, collaborate seamlessly, communicate with each other, and conduct virtual meetings all within a single integrated environment. The platform supports live drawing, instant messaging, screen sharing, and video conferencing capabilities for a comprehensive collaborative experience.
+            Canvas Collab is a comprehensive real-time collaborative digital workspace platform, designed as a modern evolution of traditional whiteboarding tools like Scribble. This full-stack application enables multiple participants to join virtual collaborative sessions where they can work together on a shared digital canvas in real-time. The platform features advanced drawing tools, instant messaging capabilities, screen sharing functionality, and integrated video conferencing to facilitate seamless communication and collaboration.
             <br /><br />
-            Through this project, I gained extensive experience in implementing real-time synchronization using WebSockets, managing concurrent user sessions, building responsive collaborative UI, handling complex state management, and integrating multimedia communication features.
+            Key features include:
+            <br />• Real-time collaborative drawing with multiple brush types and colors
+            <br />• Instant messaging system for team communication
+            <br />• Screen sharing capabilities for presentations and demonstrations
+            <br />• Video conferencing integration for face-to-face meetings
+            <br />• User management system with room-based collaboration
+            <br />• Persistent session storage and canvas state management
+            <br /><br />
+            Through this project, I gained extensive experience in implementing real-time synchronization using WebSockets and Socket.IO, managing concurrent user sessions with proper conflict resolution, building responsive collaborative user interfaces, handling complex state management across multiple clients, integrating multimedia communication features, and optimizing performance for real-time applications. The project challenged me to think about scalability, data consistency, and user experience in multi-user environments.
             <br /><br />
             <span className="font-semibold text-white">Technologies:</span><br />
-            React, Node.js, Express, WebSockets, MongoDB, JavaScript
+            React, Node.js, Express, WebSockets, Socket.IO, MongoDB, JavaScript, HTML5 Canvas API
           </p>
 
-          <div className="mt-4 flex gap-4">
-            <a
-              href="https://canvascollab-uw1z.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xl text-green-400 hover:underline"
-            >
-              Live Demo
-            </a>
-            <a
-              href="https://github.com/Sathwik12345678/Canvascollab"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xl text-blue-400 hover:underline"
-            >
-              View on GitHub
-            </a>
-          </div>
+          <a
+            href="https://canvascollab-uw1z.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 text-xl text-green-400 hover:underline"
+          >
+            Live Demo
+          </a>
+          <br />
+          <a
+            href="https://github.com/Sathwik12345678/Canvascollab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-2 text-xl text-blue-400 hover:underline"
+          >
+            View on GitHub
+          </a>
         </div>
 
         {/* Project 2 */}
