@@ -55,7 +55,7 @@ function Projects() {
           </p>
 
           <a
-            href="https://canvascollab-uw1z.vercel.app/"
+            href="https://canvascollab-sable.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 text-xl text-green-400 hover:underline"
