@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sathwik Goud — Creative Engineer & Full-Stack Architect</title>
-  <meta name="description" content="Ultra Pro Max Portfolio of Sathwik Goud — Architecting high-octane web systems, autonomous AI agents, and magnetic digital experiences.">
+  <title>Ponnam Sathwik Goud — Full Stack MERN Developer</title>
+  <meta name="description" content="Portfolio of Ponnam Sathwik Goud — B.Tech Computer Science student at SR University & Full Stack MERN Developer.">
 
   <!-- Google Fonts: Syne, Instrument Serif, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,796 +25,381 @@
   <!-- Top Scroll Progress Bar -->
   <div class="scroll-progress-bar" id="scrollProgressBar"></div>
 
-  <!-- FLOATING NAVIGATION BAR -->
+  <!-- REDESIGNED ULTRA-SLEEK DYNAMIC CAPSULE NAVIGATION BAR -->
   <header class="site-header">
-    <div class="nav-wrapper">
-      <a href="#hero" class="brand-monogram">
-        <div class="brand-badge">SG</div>
-        <div class="brand-title">
-          <span class="brand-name">Sathwik Goud</span>
-          <span class="brand-role">Software Architect</span>
+    <nav class="nav-capsule" aria-label="Main Navigation">
+      <a href="index.html" class="brand-monogram">
+        <div class="brand-badge">PSG</div>
+        <div class="brand-name-wrap">
+          <span class="brand-name">Ponnam Sathwik</span>
+          <span class="brand-role">Full Stack Developer</span>
         </div>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
-        <li><a href="#projects" class="nav-link">Selected Work</a></li>
-        <li><a href="#skills" class="nav-link">Architecture</a></li>
-        <li><a href="#blog" class="nav-link">Insights</a></li>
-        <li><a href="#testimonials" class="nav-link">Stories</a></li>
-        <li><a href="project.html" class="nav-link">Live Prototype</a></li>
+      <!-- Dynamic Pill Switcher Matching Original Pages -->
+      <ul class="nav-capsule-links">
+        <li><a href="index.html" class="nav-capsule-link is-active">Home</a></li>
+        <li><a href="projects.html" class="nav-capsule-link">Projects</a></li>
+        <li><a href="resume.html" class="nav-capsule-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-capsule-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
-        <div class="status-indicator">
-          <span class="status-pulse"></span>
-          <span>Open to High-Impact Roles</span>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Open to Roles</span>
         </div>
-        <a href="#contact" class="btn-pill-primary">Initiate Dialogue →</a>
-        <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open Navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="contact.html" class="btn-pill-primary">Get in Touch →</a>
+        <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open Navigation Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
       </div>
-    </div>
+    </nav>
   </header>
 
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobileNavDrawer">
     <ul class="mobile-nav-links">
-      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-      <li><a href="#capabilities" class="mobile-nav-link">Capabilities</a></li>
-      <li><a href="#projects" class="mobile-nav-link">Selected Work</a></li>
-      <li><a href="#skills" class="mobile-nav-link">Architecture</a></li>
-      <li><a href="#blog" class="mobile-nav-link">Insights</a></li>
-      <li><a href="project.html" class="mobile-nav-link">Live Prototype</a></li>
-      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      <li><a href="index.html" class="mobile-nav-link is-active">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+      <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
     </ul>
-    <a href="#contact" class="btn-pill-primary" style="margin-top: 20px;">Get In Touch</a>
+    <a href="contact.html" class="btn-pill-primary" style="margin-top: 20px; font-size: 15px; padding: 12px 28px;">Initiate Dialogue →</a>
   </div>
 
   <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
+    <!-- HOME HERO SECTION (Preserving Sathwik's Profile Photo, Real Bio & Typing Text) -->
+    <section class="home-hero">
       <div class="hero-glow-orb hero-glow-1"></div>
       <div class="hero-glow-orb hero-glow-2"></div>
 
-      <div class="container hero-content">
-        <div class="hero-badge-pill">
-          <span>✦ FULL-STACK ARCHITECT & CREATIVE ENGINEER ✦</span>
+      <div class="container">
+        <div class="home-hero-grid">
+          <!-- Left: Sathwik's Photo with Ambient Glow -->
+          <div class="profile-card-column">
+            <div class="profile-avatar-frame">
+              <div class="profile-avatar-glow"></div>
+              <img src="profile.png" alt="Ponnam Sathwik Goud" class="profile-img-real">
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+              <span class="tech-tag" style="border-color: rgba(56, 189, 248, 0.4); color: var(--accent-cyan);">SR University '27</span>
+              <span class="tech-tag">B.Tech CSE</span>
+            </div>
+          </div>
+
+          <!-- Right: Salutation, Full Name, Typing Role, Real Bio -->
+          <div class="home-hero-info">
+            <span class="hero-salutation">Hi, I'm Sathwik</span>
+            <h1 class="hero-full-name">Ponnam Sathwik Goud</h1>
+
+            <!-- Animated Typing Text: Mern Stack Developer -->
+            <div class="typing-role-row">
+              <span id="typingRole">Mern Stack Developer</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <!-- Exact Bio from Original Site -->
+            <div class="hero-bio-card">
+              I am a B.Tech Computer Science student at SR University with a strong interest in full stack development and modern web technologies. I have hands-on experience in building responsive and user-friendly applications using JavaScript, Python, React, Node.js, and MongoDB. I have worked on projects such as an AI chatbot and a task management system, which helped me understand the complete development process from frontend design to backend integration. I am passionate about learning new technologies, writing clean and efficient code, and continuously improving my problem-solving skills. My goal is to build real-world applications that create value and to grow as a skilled software developer by gaining practical experience and working on meaningful projects.
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="hero-quick-actions">
+              <a href="projects.html" class="btn-pill-primary">
+                View My Projects
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                </svg>
+              </a>
+              <a href="resume.html" class="btn-pill-ghost">
+                Inspect Resume ↓
+              </a>
+              <a href="contact.html" class="btn-pill-ghost">
+                Contact Me ✉
+              </a>
+            </div>
+          </div>
         </div>
 
-        <h1 class="hero-title">
-          Engineering <br>
-          <span class="editorial-serif-accent">Digital Mastery</span> & <br>
-          Autonomous Systems
-        </h1>
-
-        <p class="hero-lead">
-          Turning complex computational challenges into ultra-performant, magnetic software architectures. Specializing in high-concurrency applications, modern agentic AI, and fluid interactive design.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn-pill-primary">
-            Explore Architecture
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-            </svg>
-          </a>
-          <a href="#capabilities" class="btn-pill-ghost">
-            View Engineering Pillars ↓
+        <!-- Scroll Down Mouse Indicator -->
+        <div class="scroll-down-widget">
+          <a href="#skills" class="scroll-down-btn">
+            <span>Scroll Down</span>
+            <div class="mouse-pill">
+              <div class="mouse-wheel"></div>
+            </div>
           </a>
         </div>
+      </div>
+    </section>
 
-        <!-- Live KPI Stats -->
-        <div class="hero-stats-row">
-          <div class="stat-card">
-            <div class="stat-number">15+</div>
-            <div class="stat-label">Systems Engineered</div>
+    <!-- INFINITE MARQUEE TICKER -->
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item"><span class="marquee-dot"></span>FULL STACK MERN ARCHITECTURE</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>REAL-TIME WEBSOCKETS & SOCKET.IO</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>REACT.JS & NODE.JS MICROSERVICES</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>MONGODB & RELATIONAL DATA MODELING</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>RESPONSIVE USER INTERFACES</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>AI CHATBOT ORCHESTRATION</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item"><span class="marquee-dot"></span>FULL STACK MERN ARCHITECTURE</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>REAL-TIME WEBSOCKETS & SOCKET.IO</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>REACT.JS & NODE.JS MICROSERVICES</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>MONGODB & RELATIONAL DATA MODELING</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>RESPONSIVE USER INTERFACES</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>AI CHATBOT ORCHESTRATION</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS SECTION (Exact categories & levels from Sathwik's original site) -->
+    <section class="skills-section scroll-open-section" id="skills">
+      <div class="section-shutter-curtain"></div>
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-pretitle">✦ TECHNICAL MASTERY</span>
+          <h2 class="section-headline">
+            Skills & <br>
+            <span class="editorial-serif-accent">Competencies</span>
+          </h2>
+          <p class="section-subtitle">
+            Core technologies and tools utilized to engineer responsive, robust, and full-stack web applications.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Programming Languages
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>JavaScript (ES6+)</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>C</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">99.8%</div>
-            <div class="stat-label">Lighthouse Core Vitals</div>
+
+          <!-- Frontend Development -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              Frontend Development
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>HTML5 (Semantic)</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>CSS3 & Modern Styling</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>React.js</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">&lt;60ms</div>
-            <div class="stat-label">Median API Latency</div>
+
+          <!-- Backend Development -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              Backend Development
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>Node.js</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>Express.js</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>RESTful API Design</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Production Reliability</div>
+
+          <!-- Database -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              Database Management
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>MongoDB</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Tools & Version Control -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+              Tools & Version Control
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>GitHub</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>Git</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Real-Time & Integration -->
+          <div class="skill-card">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+              Real-Time & AI Workflows
+            </h3>
+            <div class="skill-row">
+              <div class="skill-info"><span>WebSockets / Socket.IO</span><span class="skill-pct">82%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-info"><span>OpenAI API Integration</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DUAL INFINITE MARQUEE TICKER -->
-    <div class="marquee-band">
-      <div class="marquee-track">
-        <div class="marquee-group">
-          <span class="marquee-item"><span class="marquee-dot"></span>AUTONOMOUS AGENT ORCHESTRATION</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>HIGH-OCTANE SYSTEM DESIGN</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>PROTOTYPE & FACTORY PATTERNS</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>CLOUD NATIVE MICROSERVICES</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>CINEMATIC INTERACTION DESIGN</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>SUB-SECOND LATENCY PIPELINES</span>
-        </div>
-        <div class="marquee-group" aria-hidden="true">
-          <span class="marquee-item"><span class="marquee-dot"></span>AUTONOMOUS AGENT ORCHESTRATION</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>HIGH-OCTANE SYSTEM DESIGN</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>PROTOTYPE & FACTORY PATTERNS</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>CLOUD NATIVE MICROSERVICES</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>CINEMATIC INTERACTION DESIGN</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>SUB-SECOND LATENCY PIPELINES</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- SIGNATURE STICKY STACKING CARDS (Why Sathwik / Core Capabilities) -->
-    <!-- As you scroll down through this section, cards stack and open! -->
-    <section class="stacking-section scroll-open-section" id="capabilities">
+    <!-- SIGNATURE STICKY STACKING CARDS (Core Engineering Strengths - Opens on Scroll) -->
+    <section class="stacking-section scroll-open-section" id="pillars">
       <div class="section-shutter-curtain"></div>
       <div class="container">
         <div class="section-header-editorial">
-          <span class="section-pretitle">✦ Architectural Pillars</span>
+          <span class="section-pretitle">✦ ENGINEERING APPROACH</span>
           <h2 class="section-headline">
-            Capabilities Built for <br>
-            <span class="editorial-serif-accent">Relentless Scale</span>
+            How I Build <br>
+            <span class="editorial-serif-accent">Modern Web Systems</span>
           </h2>
           <p class="section-subtitle">
-            Every system is forged with mathematical rigor, uncompromising speed, and architectural elegance designed to outlast shifting tech fads.
+            Combining structured software principles, real-time synchronization, and clean modular code for scalable end-user applications.
           </p>
         </div>
 
         <div class="stacking-track">
-          <!-- Stacking Card 1 -->
+          <!-- Card 1 -->
           <div class="sticky-stack-card card-theme-obsidian">
             <div class="stack-card-header">
               <div class="stack-card-meta">
                 <span class="stack-card-index">01</span>
                 <div>
-                  <span class="stack-card-tag">SYSTEMS ARCHITECTURE</span>
-                  <h3 class="stack-card-title">Scalable Cloud & Event-Driven Backends</h3>
+                  <span class="stack-card-tag">FULL STACK INTEGRATION</span>
+                  <h3 class="stack-card-title">End-to-End MERN Stack Architecture</h3>
                 </div>
               </div>
               <div class="stack-card-icon-pill">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                  <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
               </div>
             </div>
             <p class="stack-card-hook">
-              Architecting fault-tolerant microservices, resilient event streams, and relational data pipelines capable of absorbing thousands of requests per second with deterministic latency.
+              From designing interactive React user interfaces to building high-performance Node.js and Express REST APIs with clean MongoDB document schemas.
             </p>
             <div class="stack-card-expanded">
               <p class="stack-card-details">
-                Leveraging async I/O routines, distributed Redis caching layers, connection pooling, and strict schema boundaries to guarantee zero-downtime reliability under aggressive surge loads.
+                Handling full CRUD cycles, validating payload integrity, orchestrating asynchronous requests, and maintaining strict state synchronization across client and server.
               </p>
               <div class="stack-card-footer">
                 <div class="stack-tag-list">
-                  <span class="tech-tag">Python AsyncIO</span>
+                  <span class="tech-tag">React.js</span>
                   <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                  <span class="tech-tag">Redis Pub/Sub</span>
-                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">MongoDB</span>
                 </div>
-                <span class="stack-step-indicator">Pillar 01 of 04</span>
+                <span class="stack-step-indicator">Pillar 01 of 03</span>
               </div>
             </div>
           </div>
 
-          <!-- Stacking Card 2 -->
+          <!-- Card 2 -->
           <div class="sticky-stack-card card-theme-slate">
             <div class="stack-card-header">
               <div class="stack-card-meta">
                 <span class="stack-card-index">02</span>
                 <div>
-                  <span class="stack-card-tag">ARTIFICIAL INTELLIGENCE</span>
-                  <h3 class="stack-card-title">Autonomous Agent & Memory Engineering</h3>
+                  <span class="stack-card-tag">REAL-TIME COLLABORATION</span>
+                  <h3 class="stack-card-title">Live WebSockets & Multi-User Synchronization</h3>
                 </div>
               </div>
               <div class="stack-card-icon-pill">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                  <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
               </div>
             </div>
             <p class="stack-card-hook">
-              Moving beyond naive prompts into full-fledged autonomous agents equipped with hierarchical memory, tool actuation, and real-time voice synthesis loops.
+              Engineering collaborative tools where multiple users interact concurrently without conflict—exemplified in the Canvas Collab whiteboard platform.
             </p>
             <div class="stack-card-expanded">
               <p class="stack-card-details">
-                As demonstrated in Friday AI, systems are engineered with multi-tier vector indexing, fallback decision graphs, and deterministic tool validation to achieve human-level reliability without hallucinations.
+                Implementing Socket.IO event channels, conflict resolution for simultaneous canvas drawing, integrated instant messaging, and low-latency session persistence.
               </p>
               <div class="stack-card-footer">
                 <div class="stack-tag-list">
-                  <span class="tech-tag">LLM Orchestration</span>
-                  <span class="tech-tag">Vector Embeddings</span>
-                  <span class="tech-tag">RAG Pipelines</span>
-                  <span class="tech-tag">Agentic Loops</span>
+                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">Socket.IO</span>
+                  <span class="tech-tag">HTML5 Canvas</span>
+                  <span class="tech-tag">Concurrency</span>
                 </div>
-                <span class="stack-step-indicator">Pillar 02 of 04</span>
+                <span class="stack-step-indicator">Pillar 02 of 03</span>
               </div>
             </div>
           </div>
 
-          <!-- Stacking Card 3 -->
+          <!-- Card 3 -->
           <div class="sticky-stack-card card-theme-navy">
             <div class="stack-card-header">
               <div class="stack-card-meta">
                 <span class="stack-card-index">03</span>
                 <div>
-                  <span class="stack-card-tag">FRONTEND CRAFTSMANSHIP</span>
-                  <h3 class="stack-card-title">Hardware-Accelerated UI & Micro-Interactions</h3>
+                  <span class="stack-card-tag">INTELLIGENT APPLICATION WORKFLOWS</span>
+                  <h3 class="stack-card-title">AI Integration & Task Automation</h3>
                 </div>
               </div>
               <div class="stack-card-icon-pill">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                  <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
               </div>
             </div>
             <p class="stack-card-hook">
-              Crafting hypnotic, fluid interfaces running locked at 60 to 120 FPS. Every transition, hover spotlight, and scroll reveal is optimized for zero layout thrashing.
+              Integrating modern AI models into practical developer tools and conversational interfaces, turning static pages into smart interactive assistants.
             </p>
             <div class="stack-card-expanded">
               <p class="stack-card-details">
-                Obsessed with sub-50ms First Input Delay and zero cumulative layout shift. Combining modern typography with bespoke cursor physics and layered glass textures that feel alive to touch and cursor.
+                As built in GenZ AI Chatbot, managing conversation histories, streaming token responses, and handling rate limits gracefully to maintain an engaging user experience.
               </p>
               <div class="stack-card-footer">
                 <div class="stack-tag-list">
-                  <span class="tech-tag">Modern Vanilla JS</span>
-                  <span class="tech-tag">CSS GPU Transforms</span>
-                  <span class="tech-tag">Design Systems</span>
-                  <span class="tech-tag">Web Vitals 100%</span>
+                  <span class="tech-tag">OpenAI API</span>
+                  <span class="tech-tag">Prompt Engineering</span>
+                  <span class="tech-tag">Chat History Storage</span>
                 </div>
-                <span class="stack-step-indicator">Pillar 03 of 04</span>
+                <span class="stack-step-indicator">Pillar 03 of 03</span>
               </div>
             </div>
           </div>
-
-          <!-- Stacking Card 4 -->
-          <div class="sticky-stack-card card-theme-charcoal">
-            <div class="stack-card-header">
-              <div class="stack-card-meta">
-                <span class="stack-card-index">04</span>
-                <div>
-                  <span class="stack-card-tag">SOFTWARE DESIGN PATTERNS</span>
-                  <h3 class="stack-card-title">GoF Design Patterns & Clean Code Discipline</h3>
-                </div>
-              </div>
-              <div class="stack-card-icon-pill">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                  <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                </svg>
-              </div>
-            </div>
-            <p class="stack-card-hook">
-              Mastery over object-oriented and functional patterns—leveraging Prototype cloning for nanosecond object spawning and Factory abstraction for modular extensibility.
-            </p>
-            <div class="stack-card-expanded">
-              <p class="stack-card-details">
-                By bypassing expensive construction cycles and separating creation mechanics from business domain models, systems achieve unparalleled testability and enterprise maintainability.
-              </p>
-              <div class="stack-card-footer">
-                <div class="stack-tag-list">
-                  <span class="tech-tag">Prototype Pattern</span>
-                  <span class="tech-tag">Factory Method</span>
-                  <span class="tech-tag">Observer Pattern</span>
-                  <span class="tech-tag">SOLID Architecture</span>
-                </div>
-                <span class="stack-step-indicator">Pillar 04 of 04</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SELECTED PROJECTS SHOWCASE -->
-    <section class="projects-section scroll-open-section" id="projects">
-      <div class="section-shutter-curtain"></div>
-      <div class="container">
-        <div class="section-header-editorial">
-          <span class="section-pretitle">✦ Portfolio Catalog</span>
-          <h2 class="section-headline">
-            Selected Work & <br>
-            <span class="editorial-serif-accent">Production Deployments</span>
-          </h2>
-          <p class="section-subtitle">
-            A curated showcase of autonomous AI agents, enterprise pattern engines, and real-time platforms built with precision.
-          </p>
-        </div>
-
-        <!-- Filter Bar -->
-        <div class="filter-bar">
-          <button class="filter-btn is-active" data-filter="all">All Systems</button>
-          <button class="filter-btn" data-filter="ai">AI & Agents</button>
-          <button class="filter-btn" data-filter="systems">Architecture & Patterns</button>
-          <button class="filter-btn" data-filter="web">Full-Stack Platforms</button>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1: Friday AI -->
-          <div class="project-card" data-category="ai systems" data-project="friday">
-            <div class="project-media-wrap">
-              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=900" alt="Friday AI" class="project-banner-img">
-              <span class="project-badge-pill">AI Orchestrator</span>
-            </div>
-            <div class="project-content">
-              <div>
-                <div class="project-title-row">
-                  <h3 class="project-title">Friday AI Assistant</h3>
-                  <div class="project-arrow-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  Voice-activated autonomous agent system featuring hierarchical contextual memory, shell/tool actuators, and low-latency audio stream processing.
-                </p>
-              </div>
-              <div class="project-tags-row">
-                <span class="tech-tag">Python 3.11</span>
-                <span class="tech-tag">FastAPI</span>
-                <span class="tech-tag">Vector Memory</span>
-                <span class="tech-tag">WebSockets</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Nexus Commerce -->
-          <div class="project-card" data-category="systems web" data-project="prototype">
-            <div class="project-media-wrap">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=900" alt="Nexus Commerce Engine" class="project-banner-img">
-              <span class="project-badge-pill">Enterprise OOP</span>
-            </div>
-            <div class="project-content">
-              <div>
-                <div class="project-title-row">
-                  <h3 class="project-title">Nexus Prototype Engine</h3>
-                  <div class="project-arrow-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  High-throughput catalog cloning architecture demonstrating the GoF Prototype Pattern. Reduces memory overhead by 70% during dynamic SKU customization.
-                </p>
-              </div>
-              <div class="project-tags-row">
-                <span class="tech-tag">JavaScript OOP</span>
-                <span class="tech-tag">Prototype Pattern</span>
-                <span class="tech-tag">State Cloning</span>
-                <span class="tech-tag">Design Patterns</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: QuickBite Logistics -->
-          <div class="project-card" data-category="web systems" data-project="quickbite">
-            <div class="project-media-wrap">
-              <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&q=80&w=900" alt="QuickBite Logistics" class="project-banner-img">
-              <span class="project-badge-pill">Event-Driven Platform</span>
-            </div>
-            <div class="project-content">
-              <div>
-                <div class="project-title-row">
-                  <h3 class="project-title">QuickBite Logistics Dispatcher</h3>
-                  <div class="project-arrow-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  Sub-second delivery orchestration engine with live courier geotracking, automated batch dispatching, and WebSocket status broadcasts.
-                </p>
-              </div>
-              <div class="project-tags-row">
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Redis Pub/Sub</span>
-                <span class="tech-tag">Socket.io</span>
-                <span class="tech-tag">PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: Editorial Insights Suite -->
-          <div class="project-card" data-category="web" data-project="editorial">
-            <div class="project-media-wrap">
-              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=900" alt="Editorial Publishing Suite" class="project-banner-img">
-              <span class="project-badge-pill">Zero-Bloat Publishing</span>
-            </div>
-            <div class="project-content">
-              <div>
-                <div class="project-title-row">
-                  <h3 class="project-title">Editorial Insights Suite</h3>
-                  <div class="project-arrow-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  Ultra-minimalist editorial publishing engine delivering 100/100 Google Lighthouse scores, instant markdown parsing, and reader engagement telemetry.
-                </p>
-              </div>
-              <div class="project-tags-row">
-                <span class="tech-tag">Vanilla JS</span>
-                <span class="tech-tag">CSS Engine</span>
-                <span class="tech-tag">Lighthouse 100</span>
-                <span class="tech-tag">Typography</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 50px;">
-          <a href="project.html" class="btn-pill-primary">
-            Explore Interactive Prototype Demo →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS & ARCHITECTURE MATRIX -->
-    <section class="skills-section scroll-open-section" id="skills">
-      <div class="section-shutter-curtain"></div>
-      <div class="container">
-        <div class="section-header-editorial">
-          <span class="section-pretitle">✦ Core Stack</span>
-          <h2 class="section-headline">
-            The Technical <br>
-            <span class="editorial-serif-accent">Matrix</span>
-          </h2>
-          <p class="section-subtitle">
-            A comprehensive inventory of languages, frameworks, and infrastructural tooling mastered through rigorous production engineering.
-          </p>
-        </div>
-
-        <div class="skills-matrix-grid">
-          <!-- Category 1: Languages & Core -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <h3 class="skill-cat-name">Languages & Core</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Python 3.x</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 95%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>JavaScript (ES6+)</span>
-                  <span class="skill-percent">96%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 96%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>HTML5 / Semantic DOM</span>
-                  <span class="skill-percent">98%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 98%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>CSS3 / GPU Acceleration</span>
-                  <span class="skill-percent">94%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 94%;"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 2: Backend & Distributed -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-              </div>
-              <h3 class="skill-cat-name">Backend & Systems</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>FastAPI & REST APIs</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 92%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Node.js / Express</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>WebSockets & Real-Time</span>
-                  <span class="skill-percent">88%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 88%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>PostgreSQL & Redis</span>
-                  <span class="skill-percent">86%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 86%;"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 3: AI & Architecture -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
-                  <path d="M12 12L2.1 12.5"></path>
-                  <path d="M12 12l4.5 8"></path>
-                </svg>
-              </div>
-              <h3 class="skill-cat-name">AI & Architecture</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Autonomous AI Agents</span>
-                  <span class="skill-percent">94%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 94%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Design Patterns (GoF)</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 95%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Git & CI/CD Pipelines</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="skill-label-split">
-                  <span>Performance Profiling</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="skill-meter-bg"><div class="skill-meter-fill" style="width: 92%;"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDITORIAL BLOG & INSIGHTS SECTION (Preserving and supercharging user's blog identity) -->
-    <section class="blog-section scroll-open-section" id="blog">
-      <div class="section-shutter-curtain"></div>
-      <div class="container">
-        <div class="section-header-editorial">
-          <span class="section-pretitle">✦ Technical Writing</span>
-          <h2 class="section-headline">
-            Architectural <br>
-            <span class="editorial-serif-accent">Insights</span>
-          </h2>
-          <p class="section-subtitle">
-            Essays on deep design patterns, sub-50ms performance engineering, and the future of autonomous software.
-          </p>
-        </div>
-
-        <div class="articles-grid">
-          <!-- Article 1 -->
-          <article class="article-card" data-article="article1">
-            <div>
-              <div class="article-meta-row">
-                <span class="article-tag">ARCHITECTURE</span>
-                <span>SEP 2025 • 6 MIN</span>
-              </div>
-              <h3 class="article-title">Mastering Design Patterns: Why Prototype & Factory Transform Enterprise Systems</h3>
-              <p class="article-excerpt">
-                How bypassing traditional constructor instantiation chains through immutable prototype cloning yielded 4x throughput improvements in high-traffic order pipelines.
-              </p>
-            </div>
-            <div class="article-read-btn">
-              Read Essay <span>→</span>
-            </div>
-          </article>
-
-          <!-- Article 2 -->
-          <article class="article-card" data-article="article2">
-            <div>
-              <div class="article-meta-row">
-                <span class="article-tag">AI SYSTEMS</span>
-                <span>AUG 2025 • 8 MIN</span>
-              </div>
-              <h3 class="article-title">Building Autonomous Agent Architectures: The Friday AI Case Study</h3>
-              <p class="article-excerpt">
-                A technical autopsy on orchestrating local vector memory, real-time voice synthesis loops, and guardrailed system tool execution without hallucination spikes.
-              </p>
-            </div>
-            <div class="article-read-btn">
-              Read Essay <span>→</span>
-            </div>
-          </article>
-
-          <!-- Article 3 -->
-          <article class="article-card" data-article="article3">
-            <div>
-              <div class="article-meta-row">
-                <span class="article-tag">PERFORMANCE</span>
-                <span>JUL 2025 • 5 MIN</span>
-              </div>
-              <h3 class="article-title">Sub-50ms Web Performance: The Art of Minimalist DOM Architecture</h3>
-              <p class="article-excerpt">
-                Why removing heavy client framework runtimes and embracing hardware-accelerated CSS transforms guarantees 100/100 Core Web Vitals on any device.
-              </p>
-            </div>
-            <div class="article-read-btn">
-              Read Essay <span>→</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS / STORIES (Directly modeled after neomediakey stories section) -->
-    <section class="stories-section scroll-open-section" id="testimonials">
-      <div class="section-shutter-curtain"></div>
-      <div class="container">
-        <div class="section-header-editorial">
-          <span class="section-pretitle">✦ Endorsements</span>
-          <h2 class="section-headline">
-            Collaborator <br>
-            <span class="editorial-serif-accent">Stories</span>
-          </h2>
-          <p class="section-subtitle">
-            What engineering leads and collaborators say about partnering with Sathwik on critical software missions.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <!-- Story 1 -->
-          <div class="testimonial-card">
-            <div>
-              <div class="star-rating">★★★★★</div>
-              <p class="testimonial-quote">
-                "Sathwik possesses a rare blend of deep backend architectural rigor and a relentless obsession with UI fidelity. His work on our prototype pattern pipeline cut our latency in half."
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">A</div>
-              <div>
-                <div class="author-name">Alex Rivera</div>
-                <div class="author-title">Principal Cloud Architect</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story 2 -->
-          <div class="testimonial-card">
-            <div>
-              <div class="star-rating">★★★★★</div>
-              <p class="testimonial-quote">
-                "The Friday AI assistant Sathwik engineered felt genuinely alive. The voice latency and tool routing were so crisp that our whole team immediately adopted it for workflow automation."
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">D</div>
-              <div>
-                <div class="author-name">David Chen</div>
-                <div class="author-title">Lead AI Researcher</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story 3 -->
-          <div class="testimonial-card">
-            <div>
-              <div class="star-rating">★★★★★</div>
-              <p class="testimonial-quote">
-                "If you need a developer who delivers 100/100 Lighthouse performance, writes clean maintainable OOP code, and crafts jaw-dropping visual interactions, Sathwik is the one to call."
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">S</div>
-              <div>
-                <div class="author-name">Sarah Jenkins</div>
-                <div class="author-title">VP of Product & Engineering</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GRAND CALL-TO-ACTION (CTA) SECTION (Modeled after neomediakey "Ready to Unlock") -->
-    <section class="cta-section scroll-open-section" id="contact">
-      <div class="cta-glow-backdrop"></div>
-      <div class="section-shutter-curtain"></div>
-      <div class="container cta-box">
-        <span class="section-pretitle">✦ INITIATE TRANSMISSION</span>
-        
-        <h2 class="cta-headline">
-          Ready to Build <br>
-          <span class="editorial-serif-accent">Something Extraordinary?</span>
-        </h2>
-
-        <p class="cta-subtext">
-          Direct line to Sathwik Goud. Whether you're architecting an autonomous agent, scaling a distributed backend, or demanding a world-class web experience—let's make it real.
-        </p>
-
-        <!-- Direct Transmission Form -->
-        <div class="cta-form-card">
-          <form id="contactForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="formName" class="form-label">Your Name / Organization</label>
-                <input type="text" id="formName" class="form-input" placeholder="e.g. Elena Rostova" required>
-              </div>
-              <div class="form-group">
-                <label for="formEmail" class="form-label">Email Address</label>
-                <input type="email" id="formEmail" class="form-input" placeholder="elena@enterprise.com" required>
-              </div>
-            </div>
-            <div class="form-group" style="margin-bottom: 24px;">
-              <label for="formMessage" class="form-label">Project Vision / Scope</label>
-              <textarea id="formMessage" class="form-textarea" placeholder="Describe the challenge, timeline, and architectural requirements..." required></textarea>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
-              <button type="submit" class="btn-pill-primary" style="padding: 14px 32px; font-size: 14px;">
-                Send Direct Message →
-              </button>
-              <button type="button" class="email-copy-pill" id="copyEmailBtn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-                Copy goudsathwik55@gmail.com
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div class="cta-guarantees-row">
-          <span class="guarantee-item">
-            <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Rapid &lt;24hr Response Time
-          </span>
-          <span class="guarantee-item">
-            <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Clean Modular Architecture
-          </span>
-          <span class="guarantee-item">
-            <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Direct Senior Collaboration
-          </span>
         </div>
       </div>
     </section>
@@ -823,76 +408,32 @@
   <!-- EDITORIAL FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-top-row">
-        <div class="footer-brand">
-          <div class="footer-brand-title">SATHWIK GOUD</div>
-          <p class="footer-brand-desc">
-            Creative Engineer & Full-Stack Architect. Crafting high-performance digital systems and AI agents that unlock exponential value.
+      <div class="footer-inner">
+        <div>
+          <span style="font-family: var(--font-display); font-weight: 800; color: var(--text-primary); font-size: 16px;">
+            PONNAM SATHWIK GOUD
+          </span>
+          <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
+            B.Tech Computer Science Student @ SR University | Full Stack MERN Developer
           </p>
         </div>
 
-        <div class="footer-links-grid">
-          <div>
-            <div class="footer-col-title">Navigation</div>
-            <ul class="footer-nav-list">
-              <li><a href="#hero" class="footer-link">Home</a></li>
-              <li><a href="#capabilities" class="footer-link">Capabilities</a></li>
-              <li><a href="#projects" class="footer-link">Selected Work</a></li>
-              <li><a href="#skills" class="footer-link">Architecture Matrix</a></li>
-              <li><a href="project.html" class="footer-link">Live Prototype</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Connect</div>
-            <ul class="footer-nav-list">
-              <li><a href="https://github.com/2303A51780" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a></li>
-              <li><a href="mailto:goudsathwik55@gmail.com" class="footer-link">Direct Email ↗</a></li>
-              <li><a href="#contact" class="footer-link">Initiate Inquiry ↗</a></li>
-            </ul>
-          </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a href="index.html" class="nav-capsule-link" style="padding: 4px 10px;">Home</a>
+          <a href="projects.html" class="nav-capsule-link" style="padding: 4px 10px;">Projects</a>
+          <a href="resume.html" class="nav-capsule-link" style="padding: 4px 10px;">Resume</a>
+          <a href="contact.html" class="nav-capsule-link" style="padding: 4px 10px;">Contact</a>
+          <a href="https://github.com/Sathwik12345678" target="_blank" rel="noopener noreferrer" class="nav-capsule-link" style="padding: 4px 10px;">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ponnam-sathwik-2b6667300/" target="_blank" rel="noopener noreferrer" class="nav-capsule-link" style="padding: 4px 10px;">LinkedIn ↗</a>
         </div>
       </div>
-
-      <div class="footer-bottom-row">
-        <p>© 2026 Sathwik Goud. All rights reserved. Crafted with ruthless performance standards.</p>
-        <p style="color: var(--accent-slate-light);">Designed for those who demand excellence.</p>
+      <div style="text-align: center; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-dim);">
+        © 2026 Ponnam Sathwik Goud. All rights reserved.
       </div>
     </div>
   </footer>
 
-  <!-- INTERACTIVE MODAL DIALOG FOR PROJECTS & ARTICLES -->
-  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-dialog">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <img src="" alt="Project Visual" class="modal-image-preview" id="modalImg">
-      <h3 class="modal-title" id="modalTitle">Project Title</h3>
-      <div class="modal-subtitle" id="modalSubtitle">Subsystem Overview</div>
-      <div class="modal-body-text" id="modalDesc">Detailed architectural breakdown...</div>
-
-      <div class="modal-meta-grid" id="modalMetrics"></div>
-
-      <div class="stack-tag-list" id="modalTechStack" style="margin-bottom: 30px;"></div>
-
-      <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-pill-primary" id="modalGithubLink">
-          View on GitHub ↗
-        </a>
-        <a href="project.html" class="btn-pill-ghost" id="modalDemoLink">
-          Live Interactive Demo ↗
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- TOAST FEEDBACK NOTIFICATION -->
   <div class="toast-notice" id="toastNotice"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
