@@ -1,11 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vite';
+
+const root = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
-  base: process.env.NODE_ENV === 'production' ? '/my-portfolio/' : '/'
-})
+  base: './',
+  build: {
+    rollupOptions: {
+      input: {
+        index: resolve(root, 'index.html'),
+        projects: resolve(root, 'projects.html'),
+        resume: resolve(root, 'resume.html'),
+        contact: resolve(root, 'contact.html'),
+        project: resolve(root, 'project.html')
+      }
+    }
+  }
+});
