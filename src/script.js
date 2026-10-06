@@ -4,74 +4,41 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initCustomCursor();
   initScrollProgressBar();
   initActiveNavCapsule();
   initTypingAnimation();
   initScrollOpenSections();
   initStickyStackingCards();
-  initCardSpotlights();
+  initHeroPhotoFlow();
   initClipboardAction();
   initContactForm();
   initMobileNav();
 });
 
 /* --------------------------------------------------------------------------
-   1. CUSTOM MAGNETIC CURSOR
-   -------------------------------------------------------------------------- */
-function initCustomCursor() {
-  const cursor = document.getElementById('customCursor');
-  const follower = document.getElementById('customCursorFollower');
-  if (!cursor || !follower) return;
-
-  let mouseX = -100, mouseY = -100;
-  let followerX = -100, followerY = -100;
-
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
-  });
-
-  function renderFollower() {
-    followerX += (mouseX - followerX) * 0.18;
-    followerY += (mouseY - followerY) * 0.18;
-    follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%)`;
-    requestAnimationFrame(renderFollower);
-  }
-  requestAnimationFrame(renderFollower);
-
-  const hoverables = document.querySelectorAll('a, button, .project-item-card, .skill-card, .sticky-stack-card, .contact-card-mini');
-  hoverables.forEach((el) => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%) scale(2.2)`;
-      follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%) scale(1.5)`;
-      follower.style.borderColor = 'rgba(56, 189, 248, 0.7)';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%) scale(1)`;
-      follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%) scale(1)`;
-      follower.style.borderColor = 'rgba(239, 234, 226, 0.4)';
-    });
-  });
-}
-
-/* --------------------------------------------------------------------------
-   2. SCROLL PROGRESS BAR
+   1. SCROLL PROGRESS BAR
    -------------------------------------------------------------------------- */
 function initScrollProgressBar() {
   const progressBar = document.getElementById('scrollProgressBar');
   if (!progressBar) return;
 
-  window.addEventListener('scroll', () => {
+  let framePending = false;
+  const updateProgress = () => {
     const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = totalHeight > 0 ? (window.pageYOffset / totalHeight) * 100 : 0;
     progressBar.style.width = `${Math.min(progress, 100)}%`;
+    framePending = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (framePending) return;
+    framePending = true;
+    requestAnimationFrame(updateProgress);
   }, { passive: true });
 }
 
 /* --------------------------------------------------------------------------
-   3. DYNAMIC CAPSULE NAVIGATION ACTIVE STATE
+   2. DYNAMIC CAPSULE NAVIGATION ACTIVE STATE
    -------------------------------------------------------------------------- */
 function initActiveNavCapsule() {
   const links = document.querySelectorAll('.nav-capsule-link, .mobile-nav-link');
@@ -94,15 +61,20 @@ function initActiveNavCapsule() {
 }
 
 /* --------------------------------------------------------------------------
-   4. TYPING TEXT ANIMATION (Mern Stack Developer)
+   3. TYPING TEXT ANIMATION (Software Developer)
    -------------------------------------------------------------------------- */
 function initTypingAnimation() {
   const typingTarget = document.getElementById('typingRole');
   if (!typingTarget) return;
 
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    typingTarget.textContent = 'Software Developer';
+    return;
+  }
+
   const roles = [
-    'Mern Stack Developer',
-    'Full Stack Web Architect',
+    'Software Developer',
+    'Web Developer',
     'React & Node.js Engineer',
     'Computer Science Student @ SRU'
   ];
@@ -110,9 +82,9 @@ function initTypingAnimation() {
   let roleIdx = 0;
   let charIdx = 0;
   let isDeleting = false;
-  const typeSpeed = 75;
-  const deleteSpeed = 40;
-  const pauseTime = 1800;
+  const typeSpeed = 105;
+  const deleteSpeed = 60;
+  const pauseTime = 2400;
 
   function typeStep() {
     const currentRole = roles[roleIdx];
@@ -143,7 +115,7 @@ function initTypingAnimation() {
 }
 
 /* --------------------------------------------------------------------------
-   5. SCROLL-OPEN SECTION SYSTEM (Unfolding 3D motion as you scroll)
+   4. SCROLL-OPEN SECTION SYSTEM
    -------------------------------------------------------------------------- */
 function initScrollOpenSections() {
   const sections = document.querySelectorAll('.scroll-open-section');
@@ -152,6 +124,7 @@ function initScrollOpenSections() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
       }
     });
   }, {
@@ -163,7 +136,7 @@ function initScrollOpenSections() {
 }
 
 /* --------------------------------------------------------------------------
-   6. SIGNATURE STICKY STACKING CARDS (neomediakey-demo feature)
+   5. STICKY STACKING CARDS
    -------------------------------------------------------------------------- */
 function initStickyStackingCards() {
   const cards = document.querySelectorAll('.sticky-stack-card');
@@ -176,47 +149,54 @@ function initStickyStackingCards() {
     card.style.zIndex = 10 + idx;
   });
 
-  window.addEventListener('scroll', () => {
-    cards.forEach((card, idx) => {
-      const rect = card.getBoundingClientRect();
-      if (idx < cards.length - 1) {
-        const nextCard = cards[idx + 1];
-        const nextRect = nextCard.getBoundingClientRect();
-        const overlapDistance = (rect.bottom - nextRect.top);
-
-        if (overlapDistance > 0 && rect.top <= (90 + idx * 28) + 10) {
-          const compressRatio = Math.min(overlapDistance / 380, 1);
-          const scale = 1 - (compressRatio * 0.04);
-          const brightness = 1 - (compressRatio * 0.15);
-          card.style.transform = `scale(${scale})`;
-          card.style.filter = `brightness(${brightness})`;
-        } else {
-          card.style.transform = 'scale(1)';
-          card.style.filter = 'brightness(1)';
-        }
-      }
-    });
-  }, { passive: true });
 }
 
 /* --------------------------------------------------------------------------
-   7. CARD SPOTLIGHT GRADIENTS
+   6. HERO PHOTO FLOW
    -------------------------------------------------------------------------- */
-function initCardSpotlights() {
-  const cards = document.querySelectorAll('.project-item-card, .skill-card, .hero-bio-card, .contact-card-mini');
-  cards.forEach((card) => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--spotlight-x', `${x}px`);
-      card.style.setProperty('--spotlight-y', `${y}px`);
-    });
-  });
+function initHeroPhotoFlow() {
+  const landing = document.querySelector('.home-hero');
+  const photo = document.querySelector('.profile-avatar-motion');
+  const placeholder = document.querySelector('.hero-photo-placeholder');
+  if (!landing || !photo || !placeholder) return;
+
+  let framePending = false;
+  let offsetX = 0;
+  let offsetY = 0;
+
+  const updatePhotoPosition = () => {
+    const scrollY = window.scrollY;
+    const photoRect = photo.getBoundingClientRect();
+    const photoLeft = photoRect.left - offsetX;
+    const photoTop = photoRect.top - offsetY;
+    const placeholderRect = placeholder.getBoundingClientRect();
+    const landingTop = landing.getBoundingClientRect().top + scrollY;
+    const progress = Math.max(0, Math.min(1, (scrollY - landingTop) / landing.offsetHeight));
+    const easedProgress = progress * progress * (3 - 2 * progress);
+    const sourceX = placeholderRect.left + window.scrollX + placeholderRect.width / 2 - photoRect.width / 2;
+    const sourceY = placeholderRect.top + scrollY + placeholderRect.height / 2 - photoRect.height / 2;
+    const targetX = photoLeft + window.scrollX;
+    const targetY = photoTop + scrollY;
+
+    offsetX = (sourceX + (targetX - sourceX) * easedProgress) - targetX;
+    offsetY = (sourceY + (targetY - sourceY) * easedProgress) - targetY;
+    photo.style.transform = `translate3d(${offsetX}px, ${offsetY}px, 0)`;
+    framePending = false;
+  };
+
+  const scheduleUpdate = () => {
+    if (framePending) return;
+    framePending = true;
+    requestAnimationFrame(updatePhotoPosition);
+  };
+
+  updatePhotoPosition();
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
 }
 
 /* --------------------------------------------------------------------------
-   8. CLIPBOARD ACTION & TOAST ALERT
+   7. CLIPBOARD ACTION & TOAST ALERT
    -------------------------------------------------------------------------- */
 function initClipboardAction() {
   const copyBtn = document.getElementById('copyEmailBtn');
@@ -238,7 +218,7 @@ function initClipboardAction() {
 }
 
 /* --------------------------------------------------------------------------
-   9. CONTACT FORM SUBMISSION
+   8. CONTACT FORM SUBMISSION
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -261,7 +241,7 @@ function initContactForm() {
 }
 
 /* --------------------------------------------------------------------------
-   10. MOBILE DRAWER NAVIGATION
+   9. MOBILE DRAWER NAVIGATION
    -------------------------------------------------------------------------- */
 function initMobileNav() {
   const trigger = document.getElementById('mobileMenuTrigger');

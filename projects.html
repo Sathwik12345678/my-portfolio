@@ -9,18 +9,11 @@
   <!-- Google Fonts: Syne, Instrument Serif, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-
-  <!-- Film Noise Texture Overlay -->
-  <div class="noise-overlay"></div>
-
-  <!-- Custom Cursor -->
-  <div class="custom-cursor" id="customCursor"></div>
-  <div class="custom-cursor-follower" id="customCursorFollower"></div>
 
   <!-- Top Scroll Progress Bar -->
   <div class="scroll-progress-bar" id="scrollProgressBar"></div>
@@ -29,10 +22,9 @@
   <header class="site-header">
     <nav class="nav-capsule" aria-label="Main Navigation">
       <a href="index.html" class="brand-monogram">
-        <div class="brand-badge">PSG</div>
         <div class="brand-name-wrap">
           <span class="brand-name">Ponnam Sathwik</span>
-          <span class="brand-role">Full Stack Developer</span>
+          <span class="brand-role">Software Developer</span>
         </div>
       </a>
 
@@ -239,7 +231,7 @@
             PONNAM SATHWIK GOUD
           </span>
           <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
-            Full Stack MERN Developer | B.Tech CSE @ SR University
+            Software Developer | B.Tech CSE @ SR University
           </p>
         </div>
 
@@ -258,6 +250,6 @@
   </footer>
 
   <div class="toast-notice" id="toastNotice"></div>
-  <script src="script.js"></script>
+  <script type="module" src="./src/script.js"></script>
 </body>
 </html>

@@ -3,24 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ponnam Sathwik Goud — Full Stack MERN Developer</title>
-  <meta name="description" content="Portfolio of Ponnam Sathwik Goud — B.Tech Computer Science student at SR University & Full Stack MERN Developer.">
+  <title>Ponnam Sathwik Goud — Software Developer</title>
+  <meta name="description" content="Portfolio of Ponnam Sathwik Goud — B.Tech Computer Science student at SR University & Software Developer.">
 
   <!-- Google Fonts: Syne, Instrument Serif, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-
-  <!-- Film Noise Texture Overlay -->
-  <div class="noise-overlay"></div>
-
-  <!-- Custom Magnetic Cursor -->
-  <div class="custom-cursor" id="customCursor"></div>
-  <div class="custom-cursor-follower" id="customCursorFollower"></div>
 
   <!-- Top Scroll Progress Bar -->
   <div class="scroll-progress-bar" id="scrollProgressBar"></div>
@@ -29,10 +22,9 @@
   <header class="site-header">
     <nav class="nav-capsule" aria-label="Main Navigation">
       <a href="index.html" class="brand-monogram">
-        <div class="brand-badge">PSG</div>
         <div class="brand-name-wrap">
           <span class="brand-name">Ponnam Sathwik</span>
-          <span class="brand-role">Full Stack Developer</span>
+          <span class="brand-role">Software Developer</span>
         </div>
       </a>
 
@@ -73,42 +65,58 @@
   </div>
 
   <main>
-    <!-- HOME HERO SECTION (Preserving Sathwik's Profile Photo, Real Bio & Typing Text) -->
+    <!-- Landing section -->
     <section class="home-hero">
       <div class="hero-glow-orb hero-glow-1"></div>
       <div class="hero-glow-orb hero-glow-2"></div>
 
       <div class="container">
-        <div class="home-hero-grid">
-          <!-- Left: Sathwik's Photo with Ambient Glow -->
-          <div class="profile-card-column">
+        <div class="hero-landing-content">
+          <div class="hero-name-stage">
+            <h1 class="hero-full-name" aria-label="Ponnam Sathwik Goud"><span class="hero-name-part hero-name-part-left">Ponnam Sath</span><span class="hero-name-part hero-name-part-right">wik Goud</span></h1>
+            <div class="hero-photo-placeholder" aria-hidden="true"></div>
+          </div>
+
+          <div class="hero-profile-tags">
+            <span class="tech-tag" style="border-color: var(--border-glow); color: var(--accent-cyan);">SR University '27</span>
+            <span class="tech-tag">B.Tech CSE</span>
+          </div>
+
+          <div class="typing-role-row">
+            <span id="typingRole">Software Developer</span>
+            <span class="typing-cursor"></span>
+          </div>
+        </div>
+
+        <div class="scroll-down-widget">
+          <a href="#hero-intro" class="scroll-down-btn">
+            <span>Scroll to Discover</span>
+            <div class="mouse-pill">
+              <div class="mouse-wheel"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction section -->
+    <section class="hero-intro-section" id="hero-intro" aria-labelledby="hero-intro-title">
+      <div class="hero-glow-orb hero-glow-2"></div>
+      <div class="container">
+        <div class="hero-intro-layout">
+          <div class="profile-avatar-motion">
             <div class="profile-avatar-frame">
               <div class="profile-avatar-glow"></div>
-              <img src="profile.png" alt="Ponnam Sathwik Goud" class="profile-img-real">
-            </div>
-            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-              <span class="tech-tag" style="border-color: rgba(56, 189, 248, 0.4); color: var(--accent-cyan);">SR University '27</span>
-              <span class="tech-tag">B.Tech CSE</span>
+              <img src="/profile-enhanced.png" alt="Ponnam Sathwik Goud" class="profile-img-real">
             </div>
           </div>
 
-          <!-- Right: Salutation, Full Name, Typing Role, Real Bio -->
           <div class="home-hero-info">
-            <span class="hero-salutation">Hi, I'm Sathwik</span>
-            <h1 class="hero-full-name">Ponnam Sathwik Goud</h1>
-
-            <!-- Animated Typing Text: Mern Stack Developer -->
-            <div class="typing-role-row">
-              <span id="typingRole">Mern Stack Developer</span>
-              <span class="typing-cursor"></span>
-            </div>
-
-            <!-- Exact Bio from Original Site -->
+            <h2 class="hero-intro-heading" id="hero-intro-title">Introduction</h2>
             <div class="hero-bio-card">
               I am a B.Tech Computer Science student at SR University with a strong interest in full stack development and modern web technologies. I have hands-on experience in building responsive and user-friendly applications using JavaScript, Python, React, Node.js, and MongoDB. I have worked on projects such as an AI chatbot and a task management system, which helped me understand the complete development process from frontend design to backend integration. I am passionate about learning new technologies, writing clean and efficient code, and continuously improving my problem-solving skills. My goal is to build real-world applications that create value and to grow as a skilled software developer by gaining practical experience and working on meaningful projects.
             </div>
 
-            <!-- Quick Action Buttons -->
             <div class="hero-quick-actions">
               <a href="projects.html" class="btn-pill-primary">
                 View My Projects
@@ -116,24 +124,10 @@
                   <path d="M7 17L17 7M17 7H7M17 7V17"></path>
                 </svg>
               </a>
-              <a href="resume.html" class="btn-pill-ghost">
-                Inspect Resume ↓
-              </a>
-              <a href="contact.html" class="btn-pill-ghost">
-                Contact Me ✉
-              </a>
+              <a href="resume.html" class="btn-pill-ghost">Inspect Resume ↓</a>
+              <a href="contact.html" class="btn-pill-ghost">Contact Me ✉</a>
             </div>
           </div>
-        </div>
-
-        <!-- Scroll Down Mouse Indicator -->
-        <div class="scroll-down-widget">
-          <a href="#skills" class="scroll-down-btn">
-            <span>Scroll Down</span>
-            <div class="mouse-pill">
-              <div class="mouse-wheel"></div>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -414,7 +408,7 @@
             PONNAM SATHWIK GOUD
           </span>
           <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
-            B.Tech Computer Science Student @ SR University | Full Stack MERN Developer
+            B.Tech Computer Science Student @ SR University | Software Developer
           </p>
         </div>
 
@@ -434,6 +428,6 @@
   </footer>
 
   <div class="toast-notice" id="toastNotice"></div>
-  <script src="script.js"></script>
+  <script type="module" src="./src/script.js"></script>
 </body>
 </html>

@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume — Ponnam Sathwik Goud</title>
-  <meta name="description" content="Resume of Ponnam Sathwik Goud — B.Tech Computer Science student at SR University & Aspiring Full Stack Developer.">
+  <meta name="description" content="Resume of Ponnam Sathwik Goud — B.Tech Computer Science student at SR University & Aspiring Software Developer.">
 
   <!-- Google Fonts: Syne, Instrument Serif, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-
-  <!-- Film Noise Texture Overlay -->
-  <div class="noise-overlay"></div>
-
-  <!-- Custom Cursor -->
-  <div class="custom-cursor" id="customCursor"></div>
-  <div class="custom-cursor-follower" id="customCursorFollower"></div>
 
   <!-- Top Scroll Progress Bar -->
   <div class="scroll-progress-bar" id="scrollProgressBar"></div>
@@ -29,10 +22,9 @@
   <header class="site-header">
     <nav class="nav-capsule" aria-label="Main Navigation">
       <a href="index.html" class="brand-monogram">
-        <div class="brand-badge">PSG</div>
         <div class="brand-name-wrap">
           <span class="brand-name">Ponnam Sathwik</span>
-          <span class="brand-role">Full Stack Developer</span>
+          <span class="brand-role">Software Developer</span>
         </div>
       </a>
 
@@ -94,7 +86,7 @@
           </svg>
           View Resume in New Tab
         </a>
-        <a href="resume.pdf" download="Ponnam_Sathwik_Goud_Resume.pdf" class="btn-pill-ghost" style="padding: 12px 28px; font-size: 14px; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.4); color: #34d399;">
+        <a href="resume.pdf" download="Ponnam_Sathwik_Goud_Resume.pdf" class="btn-pill-ghost" style="padding: 12px 28px; font-size: 14px; background: var(--accent-slate-glow); border-color: var(--border-glow); color: var(--accent-slate-light);">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
@@ -109,7 +101,7 @@
         <!-- Resume Header -->
         <div class="resume-header">
           <h2 class="resume-name">Ponnam Sathwik Goud</h2>
-          <div class="resume-title-tag">Computer Science Student | Aspiring Full Stack Developer</div>
+          <div class="resume-title-tag">Computer Science Student | Aspiring Software Developer</div>
           <div class="resume-contact-inline">
             <span>📧 goudsathwik55@gmail.com</span>
             <span>📞 +91 9381946904</span>
@@ -126,7 +118,7 @@
             Professional Profile
           </h3>
           <p style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.8;">
-            Motivated Computer Science student with strong knowledge of JavaScript, Python, and full stack web development. Skilled in building responsive web applications using React, Node.js, Express, and MongoDB. Developed real-world projects including an AI chatbot, collaborative canvas workspace, and task management system. Passionate about learning modern technologies, writing clean code, and building user-focused applications. Seeking an opportunity to start a career as a Full Stack Developer.
+            Motivated Computer Science student with strong knowledge of JavaScript, Python, and modern software development. Skilled in building responsive web applications using React, Node.js, Express, and MongoDB. Developed real-world projects including an AI chatbot, collaborative canvas workspace, and task management system. Passionate about learning modern technologies, writing clean code, and building user-focused applications. Seeking an opportunity to start a career as a Software Developer.
           </p>
         </div>
 
@@ -208,7 +200,7 @@
             PONNAM SATHWIK GOUD
           </span>
           <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
-            Full Stack MERN Developer | B.Tech CSE @ SR University
+            Software Developer | B.Tech CSE @ SR University
           </p>
         </div>
 
@@ -226,6 +218,6 @@
   </footer>
 
   <div class="toast-notice" id="toastNotice"></div>
-  <script src="script.js"></script>
+  <script type="module" src="./src/script.js"></script>
 </body>
 </html>
