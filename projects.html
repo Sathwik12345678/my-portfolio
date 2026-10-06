@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Ponnam Sathwik Goud</title>
+  <meta name="description" content="Projects by Ponnam Sathwik Goud — Canvas Collab, GenZ AI Chatbot, and Task Manager Application.">
+
+  <!-- Google Fonts: Syne, Instrument Serif, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="./assets/script-B5HA0e37.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-Ba5B_xHn.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- REDESIGNED DYNAMIC CAPSULE NAVIGATION BAR -->
+  <header class="site-header">
+    <nav class="nav-capsule" aria-label="Main Navigation">
+      <a href="index.html" class="brand-monogram">
+        <div class="brand-name-wrap">
+          <span class="brand-name">Ponnam Sathwik</span>
+          <span class="brand-role">Software Developer</span>
+        </div>
+      </a>
+
+      <ul class="nav-capsule-links">
+        <li><a href="index.html" class="nav-capsule-link">Home</a></li>
+        <li><a href="projects.html" class="nav-capsule-link is-active">Projects</a></li>
+        <li><a href="resume.html" class="nav-capsule-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-capsule-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Open to Roles</span>
+        </div>
+        <a href="contact.html" class="btn-pill-primary">Get in Touch →</a>
+        <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open Navigation Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link is-active">Projects</a></li>
+      <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-pill-primary" style="margin-top: 20px;">Initiate Dialogue →</a>
+  </div>
+
+  <main class="page-container">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header-editorial scroll-open-section">
+        <span class="section-pretitle">✦ PRODUCTION WORK</span>
+        <h1 class="section-headline">
+          Featured <br>
+          <span class="editorial-serif-accent">Projects</span>
+        </h1>
+        <p class="section-subtitle">
+          Real-world applications built with the MERN stack, WebSockets, real-time collaboration engines, and AI integrations.
+        </p>
+      </div>
+
+      <!-- Projects List -->
+      <div class="projects-list">
+        
+        <!-- PROJECT 1: CANVAS COLLAB -->
+        <article class="project-item-card scroll-open-section">
+          <span class="project-badge-pill">Real-Time Collaborative Workspace</span>
+          <h2 class="project-item-title">Canvas Collab</h2>
+
+          <p class="project-item-desc">
+            <strong>Description:</strong><br>
+            Canvas Collab is a comprehensive real-time collaborative digital workspace platform, designed as a modern evolution of traditional whiteboarding tools like Scribble. This full-stack application enables multiple participants to join virtual collaborative sessions where they can work together on a shared digital canvas in real-time. The platform features advanced drawing tools, instant messaging capabilities, screen sharing functionality, and integrated video conferencing to facilitate seamless communication and collaboration.
+          </p>
+
+          <h3 style="font-family: var(--font-display); font-size: 17px; color: var(--text-primary); margin-bottom: 12px;">Key Features:</h3>
+          <ul class="project-features-list">
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>Real-time collaborative drawing with multiple brush types and colors</span>
+            </li>
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>Instant messaging system for team communication</span>
+            </li>
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>Screen sharing capabilities for presentations and demonstrations</span>
+            </li>
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>Video conferencing integration for face-to-face meetings</span>
+            </li>
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>User management system with room-based collaboration</span>
+            </li>
+            <li class="project-feature-bullet">
+              <span class="bullet-dot">•</span>
+              <span>Persistent session storage and canvas state management</span>
+            </li>
+          </ul>
+
+          <p class="project-item-desc" style="font-size: 14.5px; color: var(--text-muted); border-left: 2px solid var(--accent-cyan); padding-left: 16px; margin-bottom: 24px;">
+            <em>"Through this project, I gained extensive experience in implementing real-time synchronization using WebSockets and Socket.IO, managing concurrent user sessions with proper conflict resolution, building responsive collaborative user interfaces, handling complex state management across multiple clients, integrating multimedia communication features, and optimizing performance for real-time applications. The project challenged me to think about scalability, data consistency, and user experience in multi-user environments."</em>
+          </p>
+
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 8px;">
+              Technologies Used:
+            </span>
+            <div class="stack-tag-list">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Socket.IO</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5 Canvas API</span>
+            </div>
+          </div>
+
+          <div class="project-links-row">
+            <a href="https://collab-canvas-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary" style="background: #10b981; color: #fff;">
+              Live Demo ↗
+            </a>
+            <a href="https://github.com/Sathwik12345678/Canvascollab" target="_blank" rel="noopener noreferrer" class="btn-pill-ghost">
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: GENZ AI CHATBOT -->
+        <article class="project-item-card scroll-open-section">
+          <span class="project-badge-pill" style="color: #a78bfa; background: rgba(167, 139, 250, 0.1); border-color: rgba(167, 139, 250, 0.25);">Full Stack AI Conversational Agent</span>
+          <h2 class="project-item-title">GenZ AI Chatbot</h2>
+
+          <p class="project-item-desc">
+            <strong>Description:</strong><br>
+            GenZ AI Chatbot is a full-stack web application designed to provide intelligent and interactive conversations using modern web technologies. The application features a responsive user interface built with React and a backend developed using Node.js and Express. MongoDB is used to store user interactions and chat data efficiently.
+          </p>
+
+          <p class="project-item-desc" style="font-size: 14.5px; color: var(--text-muted); border-left: 2px solid #a78bfa; padding-left: 16px; margin-bottom: 24px;">
+            <em>"Through this project, I gained hands-on experience in building REST APIs, database integration, handling asynchronous operations, and developing real-world AI-based workflows."</em>
+          </p>
+
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 8px;">
+              Technologies Used:
+            </span>
+            <div class="stack-tag-list">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">OpenAI API</span>
+            </div>
+          </div>
+
+          <div class="project-links-row">
+            <a href="https://github.com/Sathwik12345678/Genz-AI-chat-bot" target="_blank" rel="noopener noreferrer" class="btn-pill-primary">
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: TASK MANAGER APPLICATION -->
+        <article class="project-item-card scroll-open-section">
+          <span class="project-badge-pill" style="color: #fbbf24; background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.25);">Productivity & CRUD Management</span>
+          <h2 class="project-item-title">Task Manager Application</h2>
+
+          <p class="project-item-desc">
+            <strong>Description:</strong><br>
+            The Task Manager Application is a full-stack productivity tool that allows users to create, update, and manage daily tasks efficiently. The project includes a clean and responsive interface and a backend system for storing and managing task data.
+          </p>
+
+          <p class="project-item-desc" style="font-size: 14.5px; color: var(--text-muted); border-left: 2px solid #fbbf24; padding-left: 16px; margin-bottom: 24px;">
+            <em>"This project helped me understand CRUD operations, frontend state management, backend API development, connecting frontend with backend services, data handling, and validation."</em>
+          </p>
+
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 8px;">
+              Technologies Used:
+            </span>
+            <div class="stack-tag-list">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="project-links-row">
+            <a href="https://github.com/Sathwik12345678/Taskmanager_Application" target="_blank" rel="noopener noreferrer" class="btn-pill-primary">
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span style="font-family: var(--font-display); font-weight: 800; color: var(--text-primary); font-size: 16px;">
+            PONNAM SATHWIK GOUD
+          </span>
+          <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
+            Software Developer | B.Tech CSE @ SR University
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a href="index.html" class="nav-capsule-link" style="padding: 4px 10px;">Home</a>
+          <a href="projects.html" class="nav-capsule-link" style="padding: 4px 10px;">Projects</a>
+          <a href="resume.html" class="nav-capsule-link" style="padding: 4px 10px;">Resume</a>
+          <a href="contact.html" class="nav-capsule-link" style="padding: 4px 10px;">Contact</a>
+          <a href="https://github.com/Sathwik12345678" target="_blank" rel="noopener noreferrer" class="nav-capsule-link" style="padding: 4px 10px;">GitHub ↗</a>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-dim);">
+        © 2026 Ponnam Sathwik Goud. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-notice" id="toastNotice"></div>
+</body>
+</html>
